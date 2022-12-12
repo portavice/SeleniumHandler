@@ -1,5 +1,3 @@
-﻿
-using OpenQA.Selenium;
 namespace SeleniumHandler.Enums
 {
     public enum FindType
