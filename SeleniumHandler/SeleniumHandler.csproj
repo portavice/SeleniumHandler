@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationIcon>portavice-icon-32x32.ico</ApplicationIcon>
+    <Title></Title>
+    <Company>portavice GmbH</Company>
+    <Authors>Shaun Lüdeke @ portavice GmbH</Authors>
+    <Description>This package helps with Selenium. All drivers for Chrome / Firefox / Edge are pre-installed and it can be controlled with only the Selentium class to create a browser and execute actions</Description>
+    <PackageIcon>portavice-icon-32x32.png</PackageIcon>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <FileVersion>1.0.0</FileVersion>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <IncludeSymbols>False</IncludeSymbols>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <StartupObject>SeleniumHandler.Programm</StartupObject>
+    <Copyright>https://portavice.de</Copyright>
+    <RepositoryUrl>https://github.com/portavice/SeleniumHandler</RepositoryUrl>
+    <PackageReadmeFile>README.MD</PackageReadmeFile>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Selenium,Handler</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="portavice-icon-32x32.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\README.MD">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="C:\Users\Shaun\Downloads\portavice-icon-32x32.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Selenium.Support" Version="4.6.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.6.0" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="108.0.5359.2200" />
+    <PackageReference Include="Selenium.WebDriver.GeckoDriver" Version="0.32.0" />
+    <PackageReference Include="Selenium.WebDriver.MicrosoftDriver" Version="17.17134.0" />
+  </ItemGroup>
+
+</Project>
