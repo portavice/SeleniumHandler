@@ -1,4 +1,4 @@
-﻿using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium;
@@ -6,6 +6,11 @@ using SeleniumHandler.Enums;
 using SeleniumHandler.Utils;
 using OpenQA.Selenium.Support.UI;
 using System.Diagnostics;
+using System;
+using System.Threading.Tasks;
+using System.IO;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace SeleniumHandler
 {
